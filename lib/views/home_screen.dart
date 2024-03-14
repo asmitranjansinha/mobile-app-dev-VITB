@@ -74,11 +74,20 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                      builder: (context) => GridTypeLayoutScreen()),
+                      builder: (context) => const GridTypeLayoutScreen()),
                 );
               },
               child: const Text("Grid Type Layout"),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => const GridTypeLayoutScreen()),
+                );
+              },
+              child: const Text("University Images"),
+            ),
           ],
         ),
       ),
