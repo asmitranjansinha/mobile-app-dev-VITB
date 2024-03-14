@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/views/screens/addition_screen.dart';
 import 'package:test_app/views/screens/assignment_2.dart';
+import 'package:test_app/views/screens/grid_type_layout_screen.dart';
 import 'package:test_app/views/screens/horizontal_image_screen.dart';
 import 'package:test_app/views/screens/multiple_image_screen.dart';
 import 'package:test_app/views/screens/relative_layout_screen.dart';
@@ -73,7 +74,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                      builder: (context) => AdditionScreen()),
+                      builder: (context) => GridTypeLayoutScreen()),
                 );
               },
               child: const Text("Grid Type Layout"),
