@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/views/screens/addition_screen.dart';
 import 'package:test_app/views/screens/assignment_2.dart';
 import 'package:test_app/views/screens/horizontal_image_screen.dart';
 import 'package:test_app/views/screens/multiple_image_screen.dart';
@@ -58,6 +59,24 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text("Relative Layout"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => AdditionScreen()),
+                );
+              },
+              child: const Text("Addition of 2 Nos"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => AdditionScreen()),
+                );
+              },
+              child: const Text("Grid Type Layout"),
             )
           ],
         ),

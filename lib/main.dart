@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_app/controller/common_controller.dart';
 import 'package:test_app/controller/relative_layout_controller.dart';
 import 'package:test_app/controller/image_controller.dart';
 import 'package:test_app/utils/constants/text_constants.dart';
@@ -12,6 +13,9 @@ void main() {
     ),
     ChangeNotifierProvider(
       create: (_) => RelativeLayoutController(),
+    ),
+    ChangeNotifierProvider(
+      create: (_) => CommonController(),
     ),
   ], child: const TestApp()));
 }
