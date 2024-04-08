@@ -4,8 +4,10 @@ import 'package:test_app/views/screens/assignment_2.dart';
 import 'package:test_app/views/screens/grid_type_layout_screen.dart';
 import 'package:test_app/views/screens/horizontal_image_screen.dart';
 import 'package:test_app/views/screens/multiple_image_screen.dart';
+import 'package:test_app/views/screens/popup_button_screen.dart';
 import 'package:test_app/views/screens/relative_layout_screen.dart';
 import 'package:test_app/views/screens/screen_one.dart';
+import 'package:test_app/views/screens/university_images_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -83,10 +85,19 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                      builder: (context) => const GridTypeLayoutScreen()),
+                      builder: (context) => const UniversityImagesScreen()),
                 );
               },
               child: const Text("University Images"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => const PopupButtonScreen()),
+                );
+              },
+              child: const Text("Popup Button"),
             ),
           ],
         ),
